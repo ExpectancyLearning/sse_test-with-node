@@ -1,0 +1,26 @@
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home/chameleon/public_html/nodejs_apps/sse_test"
+PassengerBaseURI "/nodejs_apps/sse_test"
+PassengerNodejs "/home/chameleon/nodevenv/public_html/nodejs_apps/sse_test/18/bin/node"
+PassengerAppType node
+PassengerStartupFile app.js
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
+
+# SSE Support Configuration
+PassengerBuffering off
+PassengerBufferResponse off
+PassengerStreamResponse on
+
+# Disable caching and buffering for SSE
+<Location /nodejs_apps/sse_test/stream>
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+    Header set X-Accel-Buffering "no"
+    ProxyPass / flush=true
+</Location>
+
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION BEGIN
+<IfModule Litespeed>
+</IfModule>
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION END

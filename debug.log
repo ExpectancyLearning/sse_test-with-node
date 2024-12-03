@@ -1,0 +1,16 @@
+2024-12-03T19:53:08.591Z: === Config Loading ===
+2024-12-03T19:53:08.593Z: NODE_ENV: undefined
+2024-12-03T19:53:08.593Z: PASSENGER_APP_ENV: undefined
+2024-12-03T19:53:08.593Z: PhusionPassenger exists: false
+2024-12-03T19:53:08.594Z: Final config: {
+  "isProduction": false,
+  "baseUrl": ""
+}
+2024-12-03T19:55:05.480Z: === Config Loading ===
+2024-12-03T19:55:05.484Z: Hostname: DESKTOP-1I03MAI
+2024-12-03T19:55:05.485Z: Current directory: C:\Users\bpenn\ExpectancyLearning\nodejs_apps\sse_test
+2024-12-03T19:55:05.485Z: Is production path: false
+2024-12-03T19:55:05.485Z: Final config: {
+  "isProduction": false,
+  "baseUrl": ""
+}
